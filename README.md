@@ -1,9 +1,10 @@
 # Credit Risk Analysis Report
 
 ## Overview of the Analysis
-The purpose of this analysis was to evaluate the performance of a machine learning model in predicting credit risk. The goal was to build a model capable of accurately identifying borrowers who are likely to default on loans (high-risk loans) versus those who are likely to repay their loans (healthy loans). By leveraging historical lending data, this analysis provides insights that can be used to enhance decision-making processes in credit risk assessment.
+This analysis aimed to evaluate the performance of a machine learning model in predicting credit risk. The goal was to build a model capable of accurately identifying borrowers likely to default on loans (high-risk loans) versus those likely to repay their loans (healthy loans). By leveraging historical lending data, this analysis provides insights that can be used to enhance decision-making processes in credit risk assessment.
 
-The dataset used for this analysis contains financial information about borrowers, such as:Loan size
+The dataset used for this analysis contains financial information about borrowers, such as: 
+- Loan size
 - Interest rate
 - Borrower income
 - Debt-to-income ratio
@@ -45,7 +46,7 @@ Logistic Regression Model:
 ## Summary
 The logistic regression model demonstrated strong performance, particularly for predicting healthy loans (0), achieving perfect precision, recall, and F1-score. It also performed well in predicting high-risk loans (1), with a recall of 91% and an F1-score of 0.88. This indicates that the model successfully identifies the majority of high-risk loans while maintaining a low rate of false positives.
 
-##Recommendation:
-The logistic regression model is suitable for deployment in this credit risk analysis context. However, improvements can be made to better address the imbalance in the dataset and further enhance the prediction of high-risk loans. Techniques such as oversampling the minority class or using class weights could be explored to improve the precision for high-risk loans.
+## Recommendation
+The logistic regression model is suitable for deployment in this context of credit risk analysis. However, improvements can be made to address the imbalance in the dataset better and further enhance the prediction of high-risk loans. Techniques such as oversampling the minority class or using class weights could be explored to improve the precision for high-risk loans.
 
 Given the financial implications of misclassifying high-risk loans, prioritizing recall for class 1 is critical to minimize missed defaults. Therefore, the current model provides a solid baseline but should be fine-tuned for optimal performance in real-world applications.
